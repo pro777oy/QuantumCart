@@ -1,0 +1,8 @@
+/.idea
+/API/bin
+/API/obj
+/Core/obj
+/Core/bin
+/Infrastructure/bin
+/Infrastructure/obj
+.DS_Store
