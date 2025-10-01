@@ -41,4 +41,7 @@ catch (Exception ex)
     throw;
 }
 
+Console.WriteLine("DB Connection: " + builder.Configuration.GetConnectionString("DefaultConnection"));
+
+
 app.Run();

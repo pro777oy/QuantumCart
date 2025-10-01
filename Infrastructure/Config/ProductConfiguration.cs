@@ -8,7 +8,11 @@ public class ProductConfiguration: IEntityTypeConfiguration<Product>
 {
     public void Configure(EntityTypeBuilder<Product> builder)
     {
-        builder.Property(x => x.Price).HasColumnType("decimal(18,2)");
+        // builder.Property(x => x.Price).HasPrecision(18, 2);
+        //builder.Property(x => x.Price).HasColumnType("decimal(18,2)");
+
+        builder.Property(x => x.Price);
+
         builder.Property(x => x.Name).IsRequired();
     }
     
